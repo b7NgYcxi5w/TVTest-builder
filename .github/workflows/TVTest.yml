@@ -140,7 +140,7 @@ jobs:
   deploy:
     needs: build
     if: needs.build.outputs.should_deploy == 'true'
-    uses: ./.github/workflows/TVTest.yml
+    uses: ./.github/workflows/depelop.yml
     with:
       artifact-name: '${{ needs.build.outputs.artifact }}'
     secrets: inherit
